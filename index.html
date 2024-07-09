@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80a707e939.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+                <img width="15%" height="20%" src="images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#Services">Services</a></li>
+            `        <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, i'm <span>janvi</span><br> from bharuch</h1>
+            </div>
+    </div>
+</div>
+<!-----------------about------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="D:\janvi\final site\images\janvi-pic2.jpg">
+    </div>
+        <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+                <p>i'm janvi bhatt i am learning web design</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick = "opentab('experience')">experience</p>
+                    <p class="tab-links" onclick="opentab('education')">education</p>
+                    
+                 </div> 
+             <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>designing web/app interfaces</li>   
+                    <li><span>web development</span><br>designing web app development</li>            
+                    <li><span>app development</span><br>building anddroid/ios</li>            
+         
+                </ul>
+             </div>
+
+             <div class="tab-contents " id="experience">
+                <ul>
+                    <li><span>UI/UX</span><br>designing web/app interfaces</li>   
+                    <li><span>web development</span><br>designing web app development</li>            
+                    <li><span>app development</span><br>building anddroid/ios</li>            
+         
+                </ul>
+             </div>
+
+             <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li><span>UI/UX</span><br>designing web/app interfaces</li>   
+                    <li><span>web development</span><br>designing web app development</li>            
+                    <li><span>app development</span><br>building anddroid/ios</li>            
+         
+                </ul>
+             </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Services -->
+
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">my services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>WEB DESIGN</h2>
+                <P>web disgning is subset of web development,it for social media application designing</P>
+                  <a href="https://www.simplilearn.com/what-is-web-designing-article">LEARN MORE</a>  
+            </div>
+            
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX design</h2>
+                <P>its for music player designing.</P>
+                <a href="https://www.toptal.com/designers/ia/guide-to-information-architecture">LEARN MORE</a>  
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>app design</h2>
+                <P>its for ecommerce  application designing</P>
+                <a href="https://dribbble.com/tags/information-app">LEARN MORE</a>  
+            </div>
+        </div>
+ 
+    </div>
+</div>
+
+<!-- Portfolio -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg" alt="" >
+                <div class="layer">
+                    <h3>Music</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg" alt="">
+                <div class="layer">
+                    <h3>App</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg" alt="">
+                <div class="layer">
+                    <h3>Social media</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p> <i class="fa-solid fa-envelope"></i> Email: janvi@mail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> Phone : 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder ="Your Email required" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+    function opentab(tabname)
+{
+    for(tablinks of tablinks){
+        tablink.classlist.remove("active-link");
+    }
+     for(tabcontent of tabcontents){
+        tabcontent.classlist.remove("active-tab");
+    }
+event.currentTarget.classlist.add("active-link");
+document.getElementById(tabname).classList.add("activetab");
+
+}
+</script>
+</body>
+</html>
